@@ -1,0 +1,136 @@
+.portfolio {
+  background: var(--second-bg-color);
+}
+
+.portfolio h2 {
+  margin-bottom: 4rem;
+}
+
+.portfolio-containers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.portfolio-containers .portfolio-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+  display: flex;
+}
+
+.portfolio-box img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+.portfolio-box:hover img {
+  transform: scale(1.1);
+}
+.portfolio-box .portfolio-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  gap: 2rem;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+.portfolio-box:hover .portfolio-layer {
+  transform: translateY(0);
+}
+
+.portfolio-layer h4 {
+  font-size: 3rem;
+  /* margin: 0.3 0 1rem; */
+}
+
+.portfolio-layer p {
+  font-size: 1.6rem;
+  margin: 0.3rem 0 1rem;
+}
+
+.portfolio-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: var(--text-color);
+  border-radius: 50%;
+}
+@media (max-width: 960px) {
+  .portfolio-containers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .portfolio-box {
+    height: 30rem;
+  }
+
+  .portfolio-layer p {
+    font-size: 1.4rem;
+  }
+
+  .portfolio-layer h4 {
+    font-size: 2rem;
+  }
+
+  .portfolio-layer a {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio-containers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-box {
+    height: 30rem;
+  }
+
+  .portfolio-layer p {
+    font-size: 1.4rem;
+  }
+
+  .portfolio-layer h4 {
+    font-size: 2rem;
+  }
+
+  .portfolio-layer a {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .portfolio-layer a i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .portfolio-containers {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-box {
+    height: 25rem;
+  }
+
+  .portfolio-layer p {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-layer h4 {
+    font-size: 2rem;
+  }
+}

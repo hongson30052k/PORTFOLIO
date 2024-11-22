@@ -1,0 +1,105 @@
+/* Mặc định header hiển thị */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Header khi cuộn trang */
+.header.sticky {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: default;
+}
+
+/* Các liên kết trong navbar */
+.navbar a {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+
+/* Menu Icon và Close Icon */
+#menu-icon,
+#close-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none; /* Mặc định ẩn */
+}
+
+/* Điều chỉnh khi màn hình nhỏ hơn 991px */
+@media (max-width: 991px) {
+  .heading {
+    padding: 2rem 3%;
+  }
+  section {
+    padding: 10rem 3% 2rem;
+  }
+  .services {
+    padding-bottom: 7rem;
+  }
+  .footer {
+    padding: 2rem 3%;
+  }
+}
+
+/* Điều chỉnh khi màn hình nhỏ hơn 768px */
+@media (max-width: 768px) {
+  /* Hiển thị menu icon */
+  #menu-icon {
+    display: block;
+  }
+  #close-icon {
+    display: none;
+  }
+  #close-icon.active {
+    display: block;
+  }
+
+  /* Ẩn Navbar khi màn hình nhỏ */
+  .navbar {
+    display: none; /* Ẩn navbar khi không có class active */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  /* Navbar khi có class active */
+  .navbar.active {
+    display: block; /* Hiển thị navbar khi có class active */
+  }
+
+  /* Các liên kết trong navbar */
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  .services h2 {
+    margin-bottom: 3rem;
+  }
+}
