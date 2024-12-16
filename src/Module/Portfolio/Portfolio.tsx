@@ -1,10 +1,6 @@
 import "./Portfolio.css";
 import img1 from "../../Img/portfolio1.jpg";
 import img2 from "../../Img/portfolio2.jpg";
-import img3 from "../../Img/portfolio3.jpg";
-import img4 from "../../Img/portfolio4.jpg";
-import img5 from "../../Img/portfolio5.jpg";
-import img6 from "../../Img/portfolio6.jpg";
 import LinkIcon from "@mui/icons-material/Link";
 const Portfolio = () => {
   return (
@@ -16,12 +12,27 @@ const Portfolio = () => {
         <div className="portfolio-box">
           <img src={img1} alt="" />
           <div className="portfolio-layer">
-            <h4>Web Design</h4>
+            <h4>FURNITURE ECOMMERCE</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-              harum!
+              <p>
+                Build react source code base with typescript, axios, redux and
+                redux toolkit.
+              </p>
+              <p>
+                Build features like product display, add to cart, cart
+                management, and checkout. Build login and registration features,
+                and implement admin and user role-based access control.
+              </p>
+              <p>
+                Design and implement APIs to interact with the database and
+                provide data to the front-end.
+              </p>
+              <p>
+                Complete the website, and test the stability and functionality
+                of the website on different browsers and devices
+              </p>
             </p>
-            <a href="">
+            <a href="https://duannoithat.vercel.app/">
               <LinkIcon
                 style={{
                   fontSize: "3rem",
@@ -34,64 +45,21 @@ const Portfolio = () => {
         <div className="portfolio-box">
           <img src={img2} alt="" />
           <div className="portfolio-layer">
-            <h4>Web Design</h4>
+            <h4>PORPOLIO</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-              harum!
+              <p>
+                Building the core React codebase: Developed the frontend
+                architecture using React, ensuring it was clean, maintainable,
+                and efficient with TypeScript.
+              </p>
+              <p>
+                Cross-browser and cross-device testing: Ensured the website
+                functioned correctly and responsively across different browsers
+                and devices, providing a consistent and high-quality user
+                experience for all users.
+              </p>
             </p>
-            <a href="">
-              <LinkIcon />
-            </a>
-          </div>
-        </div>
-        <div className="portfolio-box">
-          <img src={img3} alt="" />
-          <div className="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-              harum!
-            </p>
-            <a href="">
-              <LinkIcon />
-            </a>
-          </div>
-        </div>
-        <div className="portfolio-box">
-          <img src={img4} alt="" />
-          <div className="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-              harum!
-            </p>
-            <a href="">
-              <LinkIcon />
-            </a>
-          </div>
-        </div>
-        <div className="portfolio-box">
-          <img src={img5} alt="" />
-          <div className="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-              harum!
-            </p>
-            <a href="">
-              <LinkIcon />
-            </a>
-          </div>
-        </div>
-        <div className="portfolio-box">
-          <img src={img6} alt="" />
-          <div className="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-              harum!
-            </p>
-            <a href="">
+            <a href="/">
               <LinkIcon />
             </a>
           </div>

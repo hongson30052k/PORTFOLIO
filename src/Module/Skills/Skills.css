@@ -1,4 +1,4 @@
-.services {
+.skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,7 +6,7 @@
   gap: 5rem;
 }
 
-.services-container {
+.skills-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
   gap: 3rem;
 }
 
-.services-container .services-box {
+.skills-container .skills-box {
   flex: 1 1 30rem;
   background: var(--second-bg-color);
   padding: 3rem 2rem 4rem;
@@ -24,21 +24,21 @@
   transition: 0.5s ease;
 }
 
-.services-box i {
+.skills-box i {
   font-size: 7rem;
   color: var(--main-color);
 }
 
-.services-box h3 {
+.skills-box h3 {
   font-size: 2.6rem;
 }
 
-.services-box p {
+.skills-box p {
   font-size: 1.6rem;
   margin: 1rem 0 3rem;
 }
 
-.services-box:hover {
+.skills-box:hover {
   border-color: var(--main-color);
   transform: scale(1.02);
 }
